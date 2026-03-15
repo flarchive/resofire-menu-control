@@ -1,0 +1,80 @@
+// resofire/menu-control – Admin Styles
+
+.MenuControlPage {
+  &-list {
+    list-style: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+    max-width: 560px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 4px;
+    background: var(--control-bg);
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: grab;
+    transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+    user-select: none;
+
+    &:hover {
+      background: var(--control-bg-active);
+    }
+
+    &.is-dragging {
+      opacity: 0.4;
+      cursor: grabbing;
+    }
+
+    &.is-dragover {
+      border-color: var(--primary-color);
+      background: var(--control-bg-active);
+    }
+  }
+
+  &-handle {
+    font-size: 1.2rem;
+    color: var(--muted-more-color);
+    cursor: grab;
+    line-height: 1;
+    flex-shrink: 0;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &-key {
+    flex: 1;
+    font-family: monospace;
+    font-size: 0.875rem;
+    word-break: break-all;
+  }
+
+  &-arrows {
+    display: flex;
+    gap: 2px;
+    flex-shrink: 0;
+  }
+
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 560px;
+  }
+
+  &-success {
+    color: var(--success-color);
+    font-weight: 600;
+  }
+
+  &-empty {
+    font-style: italic;
+    padding: 0.5rem 0 1rem;
+  }
+}
