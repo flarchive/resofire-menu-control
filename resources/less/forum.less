@@ -1,0 +1,11 @@
+// resofire/menu-control — Forum Styles
+
+// Sticky sidebar: desktop only, using Flarum's @desktop-up breakpoint variable.
+// On mobile/tablet the sidebar is horizontal and sticky doesn't apply.
+@media @desktop-up {
+  body.resofire-sticky-nav .IndexPage-nav {
+    position: sticky;
+    top: 72px;
+    align-self: flex-start;
+  }
+}
