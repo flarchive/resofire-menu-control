@@ -1,0 +1,30 @@
+// resofire/menu-control — Forum Styles
+
+@media @desktop-up {
+
+  body.resofire-sticky-nav .IndexPage-nav {
+    position: sticky;
+    top: 72px;
+    align-self: flex-start;
+  }
+
+  .sideNav .Dropdown--select .Dropdown-menu > li.MenuControl-highlighted {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--primary-color);
+    }
+
+    > a {
+      color: var(--primary-color) !important;
+      font-weight: bold;
+    }
+  }
+
+}
