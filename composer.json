@@ -1,0 +1,25 @@
+{
+    "name": "resofire/menu-control",
+    "description": "Allows admins to control the order of the forum index sidebar navigation items.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Resofire\\MenuControl\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Menu Control",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-bars",
+                "backgroundColor": "#3b82f6",
+                "color": "#fff"
+            }
+        }
+    }
+}

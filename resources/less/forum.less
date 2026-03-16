@@ -1,0 +1,22 @@
+// resofire/menu-control — Forum Styles
+
+@media @desktop-up {
+
+  // Sticky sidebar
+  body.resofire-sticky-nav .IndexPage-nav {
+    position: sticky;
+    top: 72px;
+    align-self: flex-start;
+  }
+
+  // Highlighted nav item — primary color text + left border accent.
+  // Intentionally similar to the active item style but with a border
+  // to distinguish it as "admin-highlighted" rather than just "current page".
+  .sideNav .Dropdown--select .Dropdown-menu > li.MenuControl-highlighted > a {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 27px !important; // compensate for the 3px border (original is 30px)
+  }
+
+}
