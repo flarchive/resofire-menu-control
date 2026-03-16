@@ -1,0 +1,10 @@
+resofire-menu-control:
+  admin:
+    nav_order:
+      title: "Menu Item Order"
+      description: "Drag and drop (or use the arrow buttons) to reorder the sidebar navigation items on the forum index page. Changes take effect immediately after saving."
+      save_button: "Save Order"
+      save_success: "Navigation order saved."
+      no_items: "No navigation items detected yet. Visit the forum index page as an admin first to populate this list."
+      move_up: "Move up"
+      move_down: "Move down"
