@@ -1,0 +1,13 @@
+{
+  "name": "resofire-menu-control",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "flarum-webpack-config": "^3.0.3",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^4.10.0"
+  }
+}
